@@ -7,4 +7,4 @@ data:
   DB_NAME: postgres
   DB_USER: myuser
   DB_HOST: postgresql-service
-  DB_PORT: 5432
+  DB_PORT: "5432"
