@@ -1,9 +1,21 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: postgresql-service
-data:
-  DB_NAME: postgres
-  DB_USER: myuser
-  DB_HOST: 10.100.135.186
-  DB_PORT: 5432
+env:
+- name: DB_NAME
+  valueFrom:
+    configMapKeyRef:
+      name: postgresql-service
+      key: DB_NAME
+- name: DB_USER
+  valueFrom:
+    configMapKeyRef:
+      name: postgresql-service
+      key: DB_USER
+- name: DB_HOST
+  valueFrom:
+    configMapKeyRef:
+      name: postgresql-service
+      key: DB_HOST
+- name: DB_PORT
+  valueFrom:
+    configMapKeyRef:
+      name: postgresql-service
+      key: DB_PORT

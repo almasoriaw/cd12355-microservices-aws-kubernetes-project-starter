@@ -6,5 +6,5 @@ metadata:
 data:
   DB_NAME: postgres
   DB_USER: myuser
-  DB_HOST: 10.100.135.186
-  DB_PORT: "5432"
+  DB_HOST: postgresql-service
+  DB_PORT: 5432
