@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: latest
+        image: 172155457485.dkr.ecr.us-east-1.amazonaws.com/default/cd12355-microservices-aws-kubernetes-project-starter:0.0.2
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
